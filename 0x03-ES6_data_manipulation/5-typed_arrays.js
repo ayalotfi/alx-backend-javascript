@@ -13,4 +13,4 @@ export default function createInt8TypedArray(length, position, value) {
   const buf = new DataView(new ArrayBuffer(length), 0, length);
   buf.setInt8(position, value);
   return buf;
-
+}
